@@ -8,7 +8,7 @@ namespace WeatherService.Tests.Controllers
     public class GlobalWeatherControllerTest
     {
         [TestMethod]
-        public void Index()
+        public void GlobalWeatherIndex()
         {
             GlobalWeatherController controller = new GlobalWeatherController();
 

@@ -14,7 +14,7 @@ namespace WeatherService.Controllers
         [HttpGet]
         public string Index()
         {
-            string inputFilePath = ConfigurationManager.AppSettings["InputFilePath"];
+            string inputFilePath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.FullName.Replace("\\WeatherService.Tests", "") + "\\Cities.txt";
             string identifier = "", cityName = "", response = "";
             string status = "Success";
             try
